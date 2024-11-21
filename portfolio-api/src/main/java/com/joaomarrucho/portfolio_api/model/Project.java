@@ -9,7 +9,9 @@ public class Project {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
-    private String title;
+    @Column(name = "name", nullable = false)  // Aqui você pode garantir o nome e a posição
+    private String name;
+
     private String description;
     private String imageUrl;
     private String link;
@@ -23,12 +25,12 @@ public class Project {
         this.id = id;
     }
 
-    public String getTitle() {
-        return title;
+    public String getName() {
+        return name;
     }
 
-    public void setTitle(String title) {
-        this.title = title;
+    public void setName(String name) {
+        this.name = name;
     }
 
     public String getDescription() {
