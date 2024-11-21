@@ -1,39 +1,162 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&display=swap');
+
 body {
+  background-color: #2f2f2f; /* Cor de fundo cinza grafite */
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  font-family: 'Arial', sans-serif;
+  color: #fff; /* Cor do texto em branco para contraste */
+  font-family: 'Roboto', sans-serif;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+h1 {
+  color: #ffc300; /* Amarelo dourado para o título */
+  font-size: 3em;
+  text-align: center;
+  margin: 0; /* Remove qualquer margem */
+  padding: 10px 0; /* Adiciona padding apenas nas laterais se necessário */
+  background-color: #2f2f2f; /* Cor de fundo para o título */
+  border-bottom: 2px solid #ffc300;
 }
 
-ul {
-  list-style-type: none;
-  padding: 0;
+
+.projects-introduction {
+  margin: 50px auto;
+  padding: 20px;
+  text-align: center;
+  font-size: 1.2em;
+  color: #ffd60a; /* Cor amarela mais clara */
+  max-width: 900px;
+  line-height: 1.8;
+  font-family: 'League Spartan', sans-serif;
+  background-color: #2f2f2f; /* Fundo cinza escuro */
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
 }
 
-li {
-  margin: 20px 0;
-  border: 1px solid #ccc;
+.projects-introduction p {
+  font-size: 1.1em;
+  font-weight: 300; /* Menor peso para um visual mais suave */
+  color: #fff; /* Texto branco para contraste com fundo escuro */
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5); /* Adiciona uma leve sombra ao texto */
+}
+
+.projects-introduction p:hover {
+  color: #ffc300; /* Amarelo dourado no hover */
+  transition: color 0.3s ease;
+}
+
+
+/* Container que mantém os projetos em layout de grade */
+.projects-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+  margin-top: 0; /* Remover margens extras no topo */
+  padding: 0; /* Garantir que não haja padding indesejado */
+  background-color: #2f2f2f; /* Cor de fundo para os projetos */
+}
+
+/* Cada card de projeto */
+.project-card {
+  width: 300px;
+  height: 400px;
+  /*background-color: #003566; /* Azul médio para os cards */
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  transition: transform 0.3s ease-in-out;
+  margin: 20px;
+}
+
+.project-card:hover {
+  transform: scale(1.05); /* Aumenta o tamanho do projeto ao passar o mouse */
+  /*background-color: #001d3d; /* Azul escuro ao passar o mouse */
+}
+
+/* Parte superior do card - a imagem do projeto */
+.project-image-container {
+  height: 60%;
+  width: 100%;
+  overflow: hidden;
+}
+
+.project-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Ajusta a imagem para cobrir toda a área sem distorcer */
+  object-position: center; /* Garante que a imagem seja centrada */
+}
+
+/* Parte inferior do card - o nome do projeto */
+.project-info {
+  height: 40%;
+  background-color: rgba(0, 0, 0, 0.7); /* Fundo opaco */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  flex-direction: column; 
   padding: 10px;
-  border-radius: 5px;
 }
 
-img {
-  max-width: 100%;
-  height: auto;
+.project-info h2 {
+  font-size: 1.2em;
+  margin: 0;
+  color: #ffc300; /* Nome do projeto com o amarelo dourado */
+}
+
+/* Link para ver o projeto */
+.project-link {
   display: block;
+  text-align: center;
   margin-top: 10px;
+  padding: 8px 16px;
+  background-color: #ffc300; /* Amarelo dourado para o botão */
+  color: #000814; /* Texto preto no botão */
+  text-decoration: none;
+  border-radius: 5px;
+  transition: background-color 0.3s;
 }
 
-a {
-  color: blue;
+.project-link:hover {
+  background-color: #ffd60a; /* Amarelo mais claro no hover */
+}
+
+.contact-info {
+  background-color: #1f1f1f; /* Cor de fundo cinza grafite mais escuro */
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+  font-family: 'League Spartan', sans-serif;
+  border-top: 2px solid #ffc300; /* Linha dourada separando do conteúdo */
+}
+
+.contact-item {
+  margin: 10px 0;
+}
+
+.contact-item h2 {
+  font-size: 1.5em;
+  font-weight: 600;
+  color: #ffc300; /* Cor dourada para o nome */
+}
+
+.contact-item a {
+  color: #ffd60a; /* Cor amarela para os links */
   text-decoration: none;
-  margin-top: 10px;
-  display: inline-block;
+  font-size: 1.2em;
+  font-weight: 300;
+}
+
+.contact-item a:hover {
+  color: #ffc300; /* Amarelo dourado no hover */
+  text-decoration: underline; /* Sublinha o link ao passar o mouse */
+}
+
+.contact-item a:active {
+  color: #ffcc00; /* Cor mais clara para o link ativo */
 }
