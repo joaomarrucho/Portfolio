@@ -17,13 +17,7 @@ const ProjectsList = () => {
 
   return (
     <div>
-      <h1>MY PROJECTS</h1>
-      <div className="projects-introduction">
-        <p>
-            Welcome to my portfolio! Here you will find a collection of my personal projects, as well as the work I've done during my university studies. These projects showcase my skills in software development, problem-solving, and creativity.
-            Whether it’s web applications, system tools, or other software solutions, each project reflects my commitment to continuous learning and improvement. Feel free to explore and discover more about the technologies I’ve worked with and the challenges I’ve overcome along the way.
-        </p>
-        </div>
+      <h1>Explore My Work</h1>
       <div className="projects-container">
         {projects.map((project) => (
           <div key={project.id} className="project-card">

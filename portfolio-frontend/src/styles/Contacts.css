@@ -1,0 +1,59 @@
+/* Estilos para a página de Contatos */
+.contacts-container {
+    background-color: rgb(47, 47, 47);
+    color: var(--color-off-white);
+    padding: 40px 20px;
+    text-align: center;
+  }
+  
+  h1 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+  }
+  
+  p {
+    font-size: 1.2em;
+    margin-bottom: 30px;
+  }
+  
+  .contacts-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+  }
+  
+  .contact-card {
+    background-color: #262626;
+    color: var(--color-off-white);
+    padding: 20px;
+    border-radius: 8px;
+    width: 250px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    text-align: left;
+    transition: transform 0.3s ease;
+  }
+  
+  .contact-card:hover {
+    transform: scale(1.05); /* Aumenta o tamanho do card ao passar o mouse */
+  }
+  
+  .contact-card h2 {
+    font-size: 1.4em;
+    margin-bottom: 10px;
+  }
+  
+  .contact-card p {
+    font-size: 1.1em;
+    margin-bottom: 8px;
+  }
+  
+  .contact-card a {
+    color: var(--color-light-steel);
+    text-decoration: none;
+  }
+  
+  .contact-card a:hover {
+    color: var(--color-off-white);
+  }
+  

@@ -1,0 +1,199 @@
+/* Paleta de cores */
+:root {
+  --color-dark-blue: #0d1b2a;
+  --color-midnight: #1b263b;
+  --color-steel-blue: #415a77;
+  --color-light-steel: #778da9;
+  --color-off-white: #e0e1dd;
+}
+
+body {
+  background-color: var(--color-dark-blue);
+  color: var(--color-off-white);
+  font-family: 'Montserrat', sans-serif;
+  margin: 0;
+  padding: 0;
+  line-height: 1.6;
+}
+
+header {
+  background-color: var(--color-midnight);
+  color: var(--color-off-white);
+  padding: 20px 0;
+  text-align: center;
+}
+
+header a {
+  color: var(--color-steel-blue);
+  text-decoration: none;
+  font-size: 1.2em;
+  margin: 0 15px;
+  transition: color 0.3s ease;
+}
+
+header a:hover {
+  color: var(--color-light-steel);
+}
+
+h1 {
+  color: var(--color-off-white);
+  text-align: center;
+  font-size: 3em;
+  margin-top: 20px;
+}
+
+.hero-section {
+  background-color: var(--color-midnight);
+  padding: 50px 20px;
+  text-align: center;
+  color: var(--color-off-white);
+}
+
+.hero-section h1 {
+  color: var(--color-steel-blue);
+  font-size: 3.5em;
+}
+
+.hero-section p {
+  font-size: 1.5em;
+  color: var(--color-light-steel);
+  margin-top: 10px;
+}
+
+button {
+  background-color: var(--color-steel-blue);
+  color: var(--color-off-white);
+  border: none;
+  padding: 10px 20px;
+  font-size: 1em;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: var(--color-light-steel);
+}
+
+/* Estilo da página de projetos */
+.projects-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+  padding: 20px;
+  background-color: #0d1b2a; /* Opcional: Paleta de cores */
+}
+
+.project-card {
+  background-color: #0d1b2a; /* Cor de fundo do cartão */
+  border: 1px solid var(--color-light-steel); /* Bordas */
+  border-radius: 10px;
+  width: 300px; /* Largura fixa para consistência */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra para destaque */
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.project-card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+}
+
+.project-image-container {
+  height: 180px;
+  overflow: hidden;
+}
+
+.project-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Garante que a imagem preenche o espaço */
+}
+
+.project-info {
+  height: 40%;
+  background-color: rgba(0, 0, 0, 0.7); /* Fundo opaco */
+  display: flex;
+  flex-direction: column; /* Alinha os elementos na vertical */
+  justify-content: center; /* Centraliza verticalmente */
+  align-items: center; /* Centraliza horizontalmente */
+  padding: 10px;
+}
+
+.project-link {
+  display: inline-block;
+  margin: 15px 0;
+  padding: 10px 20px;
+  background-color: var(--color-steel-blue); /* Azul primário */
+  color: var(--color-off-white); /* Cor do texto */
+  text-decoration: none; /* Remove o sublinhado */
+  border-radius: 25px; /* Botão arredondado */
+  font-size: 1em;
+  font-weight: bold;
+  letter-spacing: 0.5px;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra suave */
+  border: 2px solid transparent; /* Para efeito de borda no hover */
+}
+
+.project-link:hover {
+  background-color: var(--color-light-steel); /* Azul claro no hover */
+  color: var(--color-dark-blue); /* Texto azul escuro no hover */
+  border: 2px solid var(--color-steel-blue); /* Borda destacada no hover */
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3); /* Aumenta a sombra no hover */
+  transform: scale(1.1); /* Aumenta levemente o botão */
+}
+
+.project-link:active {
+  transform: scale(0.95); /* Feedback de clique */
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.2); /* Reduz a sombra no clique */
+}
+
+
+footer {
+  background-color: var(--color-midnight);
+  color: var(--color-light-steel);
+  text-align: center;
+  padding: 20px;
+  margin-top: 20px;
+}
+
+footer a {
+  color: var(--color-steel-blue);
+  text-decoration: none;
+}
+
+footer a:hover {
+  color: var(--color-off-white);
+}
+
+.navbar {
+  background-color: var(--color-dark-blue); /* Fundo escuro */
+  padding: 10px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Sombra leve */
+}
+
+.navbar a {
+  color: #e0e1dd; /* Texto claro */
+  text-decoration: none;
+  font-size: 1.2em;
+  font-weight: bold;
+  margin: 0 15px;
+  transition: all 0.3s ease;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3); /* Sombra leve no texto */
+}
+
+.navbar a:hover {
+  color: var(--color-steel-blue); /* Cor destacada no hover */
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Aumenta a sombra no hover */
+  transform: scale(1.1); /* Aumenta levemente */
+}
+
+.navbar a:active {
+  color: var(--color-light-steel); /* Cor no clique */
+  transform: scale(0.95); /* Feedback visual ao clicar */
+}

@@ -1,26 +1,35 @@
 import React from 'react';
-import ProjectsList from './components/ProjectsList';
-import './App.css';
+import { BrowserRouter as Router, Route, Routes, Link } from 'react-router-dom';
+import Home from './pages/Home';
+import FeaturedProjects from './pages/FeaturedProjects';
+import AboutMe from './pages/AboutMe';
+import Contacts from './pages/Contacts';
 
 function App() {
   return (
-    <div className="App">
-      <ProjectsList />
-      <footer className="contact-info">
-        <div className="contact-item">
-          <h2>João Marrucho</h2>
-        </div>
-        <div className="contact-item">
-          <a href="mailto:joao@example.com">joaopaulomarrucho@gmail.com</a>
-        </div>
-        <div className="contact-item">
-          <a href="https://github.com/joaomarrucho/Portfolio" target="_blank" rel="noopener noreferrer">GitHub</a>
-        </div>
-        <div className="contact-item">
-          <a href="tel:+351123456789">+351 961 937 002</a>
-        </div>
-      </footer>
-    </div>
+    <Router>
+      <div>
+        {/* Header com Navegação */}
+        <header style={{ padding: '10px', backgroundColor: '#262626' }}>
+          <nav>
+            <ul style={{ listStyleType: 'none', display: 'flex', gap: '20px', justifyContent: 'center' }}>
+              <li><Link to="/" style={{textDecoration: 'none', brightness: '1.5'}}>Home</Link></li>
+              <li><Link to="/featured-projects" style={{textDecoration: 'none' }}>Featured Projects</Link></li>
+              <li><Link to="/about-me" style={{textDecoration: 'none' }}>About Me</Link></li>
+              <li><Link to="/contacts" style={{textDecoration: 'none' }}>Contacts</Link></li>
+            </ul>
+          </nav>
+        </header>
+
+        {/* Rotas */}
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/featured-projects" element={<FeaturedProjects />} />
+          <Route path="/about-me" element={<AboutMe />} />
+          <Route path="/contacts" element={<Contacts />} />
+        </Routes>
+      </div>
+    </Router>
   );
 }
 

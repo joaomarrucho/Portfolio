@@ -1,0 +1,254 @@
+/* Paleta de cores */
+:root {
+  --color-dark-blue: #0d1b2a;
+  --color-midnight: #1b263b;
+  --color-steel-blue: #415a77;
+  --color-light-steel: #778da9;
+  --color-off-white: #e0e1dd;
+}
+
+body {
+  background-color: rgb(47, 47, 47);
+  color: var(--color-off-white);
+  font-family: 'Montserrat', sans-serif;
+  margin: 0;
+  padding: 0;
+  line-height: 1.6;
+}
+
+header {
+  background-color: #1b263b;
+  color: var(--color-off-white);
+  padding: 20px 0;
+  text-align: center;
+}
+
+header a {
+  color: #e0e1dd;
+  text-decoration: none;
+  font-size: 1.2em;
+  margin: 0 15px;
+  transition: color 0.3s ease;
+}
+
+header a:hover {
+  color: var(--color-light-steel);
+}
+
+h1 {
+  color: var(--color-off-white);
+  text-align: center;
+  font-size: 3em;
+  margin-top: 20px;
+}
+
+.hero-section {
+  background-color: var(--color-midnight);
+  padding: 50px 20px;
+  text-align: center;
+  color: var(--color-off-white);
+}
+
+.hero-section h1 {
+  color: var(--color-steel-blue);
+  font-size: 3.5em;
+}
+
+.hero-section p {
+  font-size: 1.5em;
+  color: var(--color-light-steel);
+  margin-top: 10px;
+}
+
+button {
+  background-color: var(--color-steel-blue);
+  color: var(--color-off-white);
+  border: none;
+  padding: 10px 20px;
+  font-size: 1em;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: var(--color-light-steel);
+}
+
+/* Estilo da página de projetos */
+.projects-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+  padding: 20px;
+  background-color: #0d1b2a; /* Opcional: Paleta de cores */
+}
+
+.project-card {
+  border-radius: 10px;
+  width: 300px; /* Largura fixa para consistência */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra para destaque */
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.project-card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+}
+
+.project-image-container {
+  height: 180px;
+  overflow: hidden;
+}
+
+.project-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Garante que a imagem preenche o espaço */
+}
+
+.project-info {
+  padding: 15px;
+  text-align: center;
+}
+
+.project-info h2 {
+  color: var(--color-off-white);
+  font-size: 1.5em;
+  margin-bottom: 10px;
+}
+
+.project-info p {
+  color: var(--color-light-steel);
+  font-size: 1em;
+}
+
+/* Container que mantém os projetos em layout de grade */
+.projects-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+  margin-top: 0; /* Remover margens extras no topo */
+  padding: 0; /* Garantir que não haja padding indesejado */
+  background-color: rgb(47, 47, 47); /* Cor de fundo para os projetos */
+}
+
+/* Cada card de projeto */
+.project-card {
+  width: 300px;
+  height: 400px;
+  /*background-color: #003566; /* Azul médio para os cards */
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  transition: transform 0.3s ease-in-out;
+  margin: 20px;
+}
+
+.project-card:hover {
+  transform: scale(1.05); /* Aumenta o tamanho do projeto ao passar o mouse */
+  /*background-color: #001d3d; /* Azul escuro ao passar o mouse */
+}
+
+/* Parte superior do card - a imagem do projeto */
+.project-image-container {
+  height: 60%;
+  width: 100%;
+  overflow: hidden;
+}
+
+.project-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Ajusta a imagem para cobrir toda a área sem distorcer */
+  object-position: center; /* Garante que a imagem seja centrada */
+}
+
+/* Parte inferior do card - o nome do projeto */
+.project-info {
+  height: 40%;
+  background-color: rgba(0, 0, 0, 0.7); /* Fundo opaco */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  flex-direction: column; 
+  padding: 10px;
+}
+
+.project-info h2 {
+  font-size: 1.2em;
+  margin: 0;
+  color: white; /* Nome do projeto com o amarelo dourado */
+}
+
+/* Link para ver o projeto */
+.project-link {
+  display: block;
+  text-align: center;
+  margin-top: 10px;
+  padding: 8px 16px;
+  background-color: #262626; /* Amarelo dourado para o botão */
+  color: var(--color-off-white); /* Texto preto no botão */
+  text-decoration: none;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+}
+
+.project-link:hover {
+  background-color: #666666; /* Amarelo mais claro no hover */
+}
+
+
+footer {
+  background-color: #262626;
+  color: white;
+  text-align: center;
+  padding: 20px;
+  margin-top: 20px;
+}
+
+footer a {
+  color: white;
+  text-decoration: none;
+}
+
+footer a:hover {
+  color: var(--color-off-white);
+}
+
+.navbar {
+  background-color: var(--color-dark-blue); /* Fundo escuro */
+  padding: 10px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Sombra leve */
+}
+
+.navbar a {
+  color: var(--color-off-white); /* Texto claro */
+  text-decoration: none;
+  font-size: 1.2em;
+  font-weight: bold;
+  margin: 0 15px;
+  transition: all 0.3s ease;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3); /* Sombra leve no texto */
+}
+
+.navbar a:hover {
+  color: var(--color-steel-blue); /* Cor destacada no hover */
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Aumenta a sombra no hover */
+  transform: scale(1.1); /* Aumenta levemente */
+}
+
+.navbar a:active {
+  color: #e0e1dd; /* Cor no clique */
+  transform: scale(0.95); /* Feedback visual ao clicar */
+}
