@@ -6,8 +6,6 @@ A full-stack portfolio application showcasing personal and academic projects wit
 - [Features](#features)  
 - [Technologies Used](#technologies-used)  
 - [Setup](#setup)  
-- [Project Structure](#project-structure)  
-- [License](#license)  
 
 ## Features  
 
@@ -34,8 +32,6 @@ A full-stack portfolio application showcasing personal and academic projects wit
 
 ### Frontend  
 - **React.js**  
-- **CSS (custom styling)**  
-- **Google Fonts** for typography  
 
 ## Setup  
 
